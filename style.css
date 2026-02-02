@@ -5,3 +5,20 @@ li{
     display: flex;
 }
 
+ul{
+    display: flex;
+}
+
+.header{
+    background-color: forestgreen;
+    height: 90px;
+}
+
+.main{
+    
+}
+
+.footer{
+    background-color: blue;
+    height: 270px;
+}

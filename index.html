@@ -16,7 +16,23 @@
         </ul>
       </div>
     </div>
-    <div class="main"></div>
+    <div class="main">
+      <h2>記録カレンダー</h2>
+
+      <button onclick="go('2026-02-04')">2/4</button>
+      <span id="mark-2026-02-04"></span>
+
+      <script>
+      function go(date) {
+      location.href = "sheet.html?date=" + date;
+      }
+
+      const date = "2026-02-04";
+      if (localStorage.getItem(date) === "done") {
+      document.getElementById("mark-2026-02-04").textContent = "🌸";
+      }
+      </script>
+    </div>
     <div class="footer"></div>
   </body>
 </html>
